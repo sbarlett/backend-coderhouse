@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Casco",
+        "price": 100,
+        "thumbnail": "https://www.pexels.com/es-es/foto/ciudad-hombre-calle-acera-4992710/",
+        "id": 1
+    },
+    {
+        "title": "Auto",
+        "price": 1500,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-cielo-azul-clasico-caballo-mesteno-13210833/",
+        "id": 2
+    }
+]    {
+        "title": "Moto",
+        "price": 1000,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-vehiculo-estacionamiento-pavimento-13073573/",
+        "id": 3
+    },
+    {
+        "title": "Skate",
+        "price": 750,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 4
+    }
+]
