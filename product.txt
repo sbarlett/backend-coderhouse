@@ -1,26 +1,68 @@
 [
     {
         "title": "Casco",
-        "price": 100,
+        "price": 15000,
         "thumbnail": "https://www.pexels.com/es-es/foto/ciudad-hombre-calle-acera-4992710/",
         "id": 1
     },
     {
         "title": "Auto",
-        "price": 1500,
+        "price": 300000,
         "thumbnail": "https://www.pexels.com/es-es/foto/calle-cielo-azul-clasico-caballo-mesteno-13210833/",
         "id": 2
-    }
-]    {
+    },
+    {
         "title": "Moto",
-        "price": 1000,
+        "price": 700000,
         "thumbnail": "https://www.pexels.com/es-es/foto/calle-vehiculo-estacionamiento-pavimento-13073573/",
         "id": 3
     },
     {
         "title": "Skate",
-        "price": 750,
+        "price": 10000,
         "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
         "id": 4
+    },
+    {
+        "title": "Rueda",
+        "price": 32000,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 5
+    },
+    {
+        "title": "Bicicleta",
+        "price": 55000,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 6
+    },
+    {
+        "title": "Pelota de Futbol",
+        "price": 7050,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 7
+    },
+    {
+        "title": "Televisor",
+        "price": 250000,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 8
+    },
+    {
+        "title": "Parlante",
+        "price": 12000,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 9
+    },
+    {
+        "title": "Auriculares",
+        "price": 7500,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 10
+    },
+    {
+        "title": "Mochila",
+        "price": 4500,
+        "thumbnail": "https://www.pexels.com/es-es/foto/calle-tejanos-deporte-libertad-4570776/",
+        "id": 11
     }
 ]
