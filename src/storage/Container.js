@@ -36,7 +36,6 @@ class Contenedor {
         }   
     }
 
-
      async getAll(){
         try {
             const url = this.fileName
@@ -49,28 +48,44 @@ class Contenedor {
         }
     }
 
-    async deleteById(id){
+
+    async putById(id, props) {
         try {
             const url = this.fileName
             const fetch = await fs.promises.readFile(url, 'utf-8')
-            const productos = await JSON.parse(fetch)
-            const deleteProduct =  productos.filter( i => (i.id !== id))
-            const result = JSON.stringify(deleteProduct, null, 2)
-            await fs.promises.writeFile(url, result, 'utf-8')
+            let productos = await JSON.parse(fetch)
+            let product =  productos.find(pro => pro.id == id)
+            
+            const newProduct = {
+                ...product,
+                ...props
+            }
+
+            const updateProduct = productos.map( prod => {
+                if(prod.id == newProduct.id){
+                    prod = newProduct
+                }
+                return prod 
+            })
+
+            const saveProduct = JSON.stringify(updateProduct,null,3)
+            await fs.promises.writeFile(url, saveProduct)
+            return newProduct
         } catch (error) {
             console.log(error);
         }   
     }
 
-    async deleteAll(){
+    async deleteById(id){
         try {
             const url = this.fileName
             const fetch = await fs.promises.readFile(url, 'utf-8')
             let productos = await JSON.parse(fetch)
-            productos.length = 0
-            const result = JSON.stringify(productos)
+            let productDelete =  productos.filter(pro => pro.id != id)
+            
+            const result = JSON.stringify(productDelete, null, 2)
             await fs.promises.writeFile(url, result, 'utf-8')
-
+            return productDelete
         } catch (error) {
             console.log(error);
         }   
