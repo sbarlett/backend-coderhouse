@@ -4,7 +4,6 @@ const routeProducts = require('./products/products')
 
 const router = express.Router();
 
-router.use('/productos', routeProducts)
-
+router.use('/', routeProducts)
 
 module.exports = router;

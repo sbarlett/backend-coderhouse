@@ -2,7 +2,7 @@ const fs = require('fs');
 
 let id = 0
 
-class Contenedor {
+class Productos {
     constructor(fileName) {
         this.fileName = fileName
         this.product = []
@@ -16,6 +16,7 @@ class Contenedor {
                 this.product.push(productos)
                 const saveProduct = JSON.stringify(this.product, null, 4)
                 await fs.promises.writeFile(url, saveProduct, 'utf-8')
+                return product
         } catch (error) {
             console.log(error);
         }
@@ -92,6 +93,4 @@ class Contenedor {
     }
 }
 
-module.exports = {
-    Contenedor
-}
+module.exports = Productos
