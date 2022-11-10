@@ -10,8 +10,8 @@ products.save({title: 'Skate', price: 10000, thumbnail: 'https://www.pexels.com/
 
 router.get('/', async(_req, res, next) => {
     try {
-        let data = await products.getAll()
-        res.status(200).render('pages/index', {product: data })
+        let data = await products.getAll();
+        res.render('index', {products: data})
     } catch(error) {
         next(error)
     }
